@@ -3,19 +3,6 @@
   background-color: #f7f3ee;
 }
 
-.top-menu {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-bottom: 40px;
-}
-
-.quick-links {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-}
-
 .fv img {
   width: 100%;
   height: auto;
@@ -33,18 +20,12 @@
   margin-right: auto;
 }
 
-.top-banner {
-  display: flex;
-  flex: 1;
-}
-
 .top-banner img {
   width: 90%;
   display: block;
 }
 
 /* キャンペーン */
-
 .campaign {
   text-align: center;
   background-color: #f7f3ee;
@@ -62,7 +43,7 @@
 /* 初めての方へ */
 .first-guide {
   padding-top: 40px;
-  background-image: url("../images/guide_bg.jpg");
+  background-image: url("../images/first-guite/guide_bg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -76,16 +57,14 @@
 
 .first-guide > p {
   text-align: center;
-  line-height: 1.8;
   margin-bottom: 50px;
 }
 
 .first-guide section {
+  width: 90%;
   max-width: 900px;
   margin: 0 auto 25px;
   padding: 30px;
-  margin-bottom: 25px;
-  border: 1px solid #ddd;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.85);
 }
@@ -110,7 +89,7 @@
   padding: 6px 10px;
   margin-right: 10px;
   border: 1px solid #333;
-  border-radius: 50px;
+  border-radius: 30px;
   font-size: 14px;
 }
 
@@ -119,4 +98,41 @@
   padding: 10px 16px;
   background: transparent;
   border-radius: 8px;
+}
+
+.back-to-top a{
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+/* 商品一覧 */
+.product-list{
+  background-color: #f7f3ee;
+}
+
+
+.product-image{
+   width: 60%;
+   display: block;
+   margin: 0 auto;
+}
+
+.product-items{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.product-items section {
+  width: calc(25% - 15px);
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.product-items section h2 {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 400;
 }
