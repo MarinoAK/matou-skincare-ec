@@ -7,13 +7,25 @@ export interface Product {
   description: string;
 }
 
+import product01 from "../images/products/product01.jpg";
+import product02 from "../images/products/product02.jpg";
+import product03 from "../images/products/product03.jpg";
+import product04 from "../images/products/product04.jpg";
+import product05 from "../images/products/product05.jpg";
+import product06 from "../images/products/product06.jpg";
+import product07 from "../images/products/product07.jpg";
+import product08 from "../images/products/product08.jpg";
+import product09 from "../images/products/product09.jpg";
+import product10 from "../images/products/product10.jpg";
+import product11 from "../images/products/product11.jpg";
+import product12 from "../images/products/product12.jpg";
 export const products: Product[] = [
   {
     id: 1,
     name: "モイストクレンジング",
     price: 3000,
     category: "クレンジング",
-    image: "../images/products/product01.jpg",
+    image: product01,
     description: "うるおいを守りながら、やさしくメイクを落とします。\n洗い上がりもしっとり、毎日心地よく使えるクレンジングです。"
   },
   {
@@ -21,7 +33,7 @@ export const products: Product[] = [
     name: "スムースフォームウォッシュ",
     price: 2500,
     category: "洗顔",
-    image: "../images/products/product02.jpg",
+    image: product02,
     description: "皮脂や毛穴の汚れ、肌のざらつきが気になる方に。\nきめ細かな泡でやさしく洗い、すっきりとした肌に整えます。"
   },
   {
@@ -29,7 +41,7 @@ export const products: Product[] = [
     name: "バランスローション",
     price: 3500,
     category: "化粧水",
-    image: "../images/products/product03.jpg",
+    image: product03,
     description: "ベタつきや乾燥など、肌のバランスが気になる方に。\n必要なうるおいを補い、すこやかで整った肌へ導きます。"
   },
   {
@@ -37,7 +49,7 @@ export const products: Product[] = [
     name: "モイストローション",
     price: 3500,
     category: "化粧水",
-    image: "../images/products/product04.jpg",
+    image: product04,
     description: "乾燥や肌のカサつきが気になる肌に、たっぷりのうるおいを。\nみずみずしくなじみ、しっとりとなめらかな肌に整えます。"
   },
   {
@@ -45,7 +57,7 @@ export const products: Product[] = [
     name: "センシティブローション",
     price: 3800,
     category: "化粧水",
-    image: "../images/products/product05.jpg",
+    image: product05,
     description: "乾燥による肌のゆらぎや、刺激が気になりやすい方に。\n肌にうるおいを与え、すこやかな状態を保つローションです。"
   },
   {
@@ -53,7 +65,7 @@ export const products: Product[] = [
     name: "ブライトセラム",
     price: 4800,
     category: "美容液",
-    image: "../images/products/product06.jpg",
+    image: product06,
     description: "乾燥によるくすみや、肌の明るさが気になる方に。\nうるおいを与えながら、明るく透明感のある印象の肌へ。"
   },
   {
@@ -61,7 +73,7 @@ export const products: Product[] = [
     name: "ポアリファイニングセラム",
     price: 4500,
     category: "美容液",
-    image: "../images/products/product07.jpg",
+    image: product07,
     description: "毛穴の目立ちや黒ずみ、肌のざらつきが気になる方に。\nうるおいを与えながら、なめらかで整った肌へ導きます。"
   },
   {
@@ -69,7 +81,7 @@ export const products: Product[] = [
     name: "アクティブバランスセラム",
     price: 4500,
     category: "美容液",
-    image: "../images/products/product08.jpg",
+    image: product08,
     description: "皮脂によるベタつきや、繰り返す肌荒れが気になる方に。\n肌のうるおいと油分のバランスを整え、すこやかな肌へ。"
   },
   {
@@ -77,7 +89,7 @@ export const products: Product[] = [
     name: "モイストリペアセラム",
     price: 5000,
     category: "美容液",
-    image: "../images/products/product09.jpg",
+    image: product09,
     description: "乾燥やカサつき、肌のごわつきが気になる方に。\nうるおいをしっかり補い、しっとり柔らかな肌に整えます。"
   },
   {
@@ -85,7 +97,7 @@ export const products: Product[] = [
     name: "モイスチャークリーム",
     price: 4200,
     category: "保湿クリーム",
-    image: "../images/products/product10.jpg",
+    image: product10,
     description: "乾燥によるつっぱりや、うるおい不足が気になる肌に。\n濃密なうるおいで肌を包み込み、しっとり感をキープします。"
   },
   {
@@ -93,7 +105,7 @@ export const products: Product[] = [
     name: "バランシングジェル",
     price: 4000,
     category: "保湿ジェル",
-    image: "../images/products/product11.jpg",
+    image: product11,
     description: "皮脂によるベタつきと乾燥、どちらも気になる肌に。\n軽やかなジェルでうるおいを補い、みずみずしく整えます。"
   },
   {
@@ -101,7 +113,7 @@ export const products: Product[] = [
     name: "リペアナイトクリーム",
     price: 5500,
     category: "保湿クリーム",
-    image: "../images/products/product12.jpg",
+    image: product12,
     description: "夜になると乾燥や肌のごわつきが気になる方に。\n眠っている間の保湿ケアで、翌朝しっとりなめらかな肌へ。"
   }
 ];
