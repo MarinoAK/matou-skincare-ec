@@ -12,6 +12,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "index.html"),
         products: resolve(__dirname, "pages/products.html"),
+        productDetail: resolve(__dirname, "pages/product-detail.html"),
         campaign: resolve(__dirname, "pages/campaign.html"),
         firstGuide: resolve(__dirname, "pages/first-guide.html"),
       },
