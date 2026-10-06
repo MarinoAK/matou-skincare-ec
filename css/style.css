@@ -1,4 +1,60 @@
+/* 全ページ */
+body {
+  padding-top: 70px;
+}
+
 /* トップページ */
+.site-header {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px 5%;
+  background-color: #f7f3ee;
+  border-bottom: 1px solid #ddd;
+}
+
+.site-logo,
+.site-nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+.site-logo {
+  font-size: 24px;
+  letter-spacing: 0.08em;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    padding: 14px 5%;
+  }
+
+  .site-nav {
+    gap: 10px 16px;
+  }
+}
+
 .top-page{
   background-color: #f7f3ee;
 }
@@ -7,7 +63,44 @@
   width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
+}
+
+.brand-concept{
+  display: flex; 
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  color: #666;
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+.brand-text {
+  width: 50%;
+}
+
+.brand-title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 1.8;
+  color: #3e3e3e;
+}
+
+.brand-message {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+}
+
+.brand-concept img {
+  width: 50%;
+  height: auto;
 }
 
 .top-banner-list {
@@ -25,7 +118,24 @@
   display: block;
 }
 
-/* キャンペーン */
+.brand-title {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 1.8;
+  color: #3e3e3e;
+}
+
+.brand-message {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+}
+
 .campaign {
   text-align: center;
   background-color: #f7f3ee;
@@ -40,9 +150,9 @@
   margin-top: 40px;
 }
 
-/* 初めての方へ */
 .first-guide {
   padding-top: 40px;
+  padding-bottom: 40px;
   background-image: url("../images/first-guite/guide_bg.jpg");
   background-size: cover;
   background-position: center;
@@ -113,6 +223,7 @@
 .page-header {
   max-width: 1000px;
   margin: 30px 30px;
+  /* background-color: #f7f3ee; */
 }
 
 .page-header a,
@@ -148,8 +259,6 @@
 .product-image-area {
   position: relative;
 }
-
-
 
 .product-image{
   display: block;
@@ -294,9 +403,20 @@
 }
 
 /* 商品詳細 */
+.campaign-page{
+  background-color: #f7f3ee;
+}
+
+/* 初めての方へ */
+.first-guide-page {
+  background-color: #f7f3ee;
+}
+
+/* 商品詳細 */
 .product-detail {
   min-height: 100vh;
   padding: 24px;
+  padding-top: 94px;
   box-sizing: border-box;
   background-color: #f7f3ee;
   color: #333;
