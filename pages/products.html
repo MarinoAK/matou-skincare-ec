@@ -20,7 +20,33 @@
     肌と向き合い、必要な成分を丁寧に選んだスキンケア。<br>
     毎日の肌に寄り添い、心地よく続けられるものを。
   </p>
-  <div class="product-items">
+
+  <div class="product-filter">
+    <label for="category-filter">カテゴリーから探す</label>
+      <select id="category-filter">
+        <option value="all">すべて</option>
+        <option value="クレンジング">クレンジング</option>
+        <option value="洗顔">洗顔</option>
+        <option value="化粧水">化粧水</option>
+        <option value="美容液">美容液</option>
+        <option value="保湿クリーム">保湿クリーム・保湿ジェル</option>
+      </select>
+
+    <label for="price-filter">価格から探す</label>
+      <select id="price-filter">
+        <option value="all">すべて</option>
+        <option value="2000-3000">2,000円～3,000円</option>
+        <option value="3001-4000">3,001円～4,000円</option>
+        <option value="4001-5000">4,001円～5,000円</option>
+        <option value="5001-">5,001円以上</option>
+      </select>
+
+    <label for="keyword-filter">キーワードで探す</label>
+      <input type="text" id="keyword-filter" placeholder="商品名やキーワードを入力" />
+      <button type="button" id="search-button">検索</button>
+  </div>
+
+  <div class="product-items" id="product-list">
     <section class="product-item">
       <div class="product-badge-area">
         <span class="product-badge">人気No.1</span>
@@ -158,6 +184,8 @@
 
   <script type="module" src="/src/product-detail.ts"></script>
   <script type="module" src="../src/index.ts"></script>
+  <script type="module" src="../src/products-filter.ts"></script>
 </body>
+
 
 </html>

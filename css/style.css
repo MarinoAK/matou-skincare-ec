@@ -271,6 +271,18 @@ body {
   position: relative;
 }
 
+.product-filter{
+  margin-bottom: 30px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+label {
+  margin-right: 10px;
+}
+
 .product-badge-area {
   position: absolute;
   top: 10px;

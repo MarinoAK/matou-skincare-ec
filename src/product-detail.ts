@@ -1,9 +1,7 @@
 import { products } from "./products.js";
 
 // 商品詳細モーダルの表示
-const buttons = document.querySelectorAll<HTMLButtonElement>(
-  ".product-detail-button"
-);
+const buttons = document.querySelectorAll<HTMLButtonElement>(".product-detail-button");
 const productDetail = document.querySelector("#product-detail");
 const productModal = document.querySelector("#product-modal");
 
