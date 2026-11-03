@@ -31,15 +31,16 @@ function matchesPrice(price: number, priceRange: string): boolean {
     return false;
 }
 
-if (searchButton && categoryFilter && priceFilter) {
+if (searchButton && categoryFilter && priceFilter && keywordFilter) {
     searchButton.addEventListener("click", () => {
         const displayProducts = products.filter((product) => {
             const matchesCategory =
                 categoryFilter.value === "all" || product.category === categoryFilter.value;
 
             const matchesSelectedPrice = matchesPrice(product.price, priceFilter.value);
+            const matchesKeyword = product.name.includes(keywordFilter.value);
 
-            return matchesCategory && matchesSelectedPrice;
+            return matchesCategory && matchesSelectedPrice && matchesKeyword;
         });
 
 
