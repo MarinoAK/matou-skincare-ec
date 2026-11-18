@@ -633,3 +633,152 @@ label {
 #product-detail p {
   white-space: pre-line;
 }
+
+
+/* 肌悩み診断ページ */
+
+/* 診断ページ全体 */
+html,
+body.diagnosis-page {
+    min-height: 100%;
+    background-color: #f7f3ee;
+}
+
+#diagnosis-intro,
+#diagnosis-question1,
+#diagnosis-question2a,
+#diagnosis-question2b,
+#diagnosis-question3a,
+#diagnosis-question3b,
+#diagnosis-question3c,
+#diagnosis-result {
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 50px 30px;
+    text-align: center;
+    background-color: #faf9f6;
+    border-radius: 12px;
+}
+
+/* ページ見出し */
+#diagnosis-intro h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #454a40;
+}
+
+/* 説明文 */
+#diagnosis-intro p {
+    margin-bottom: 35px;
+    color: #4b4c47;
+}
+
+/* 質問番号 */
+#diagnosis-question1 > p,
+#diagnosis-question2a > p,
+#diagnosis-question2b > p,
+#diagnosis-question3a > p,
+#diagnosis-question3b > p,
+#diagnosis-question3c > p {
+    font-size: 18px;
+}
+
+/* 質問文・診断結果 */
+#diagnosis-question1 h2,
+#diagnosis-question2a h2,
+#diagnosis-question2b h2,
+#diagnosis-question3a h2,
+#diagnosis-question3b h2,
+#diagnosis-question3c h2,
+#diagnosis-result h2 {
+    margin-bottom: 35px;
+    color: #454a40;
+    font-size: 21px;
+}
+
+/* 診断結果の説明 */
+#result-description,
+#result-care-advice {
+    margin-bottom: 50px;
+    color: #454a40;
+}
+
+#result-skin-type {
+    display: table;
+    margin: 0 auto 20px;
+    font-size: 24px;
+    padding: 12px 40px;
+    border: 1px solid #d9aaa0;
+    border-radius: 8px;
+    background-color: #f8eeea;
+    color: #65534e;
+}
+
+/* 結果画面の小見出し */
+#diagnosis-result h3 {
+    margin: 35px 0 15px;
+    color: #454a40;
+    font-size: 20px;
+}
+
+#diagnosis-result h3 {
+    margin: 35px 0 15px;
+    font-size: 20px;
+    color: #454a40;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+
+    background: linear-gradient(
+        transparent 60%,
+        #f3c8c1 60%
+    );
+}
+
+/* ボタン共通 */
+#diagnosis-intro button,
+#diagnosis-result button,
+#diagnosis-question1 button,
+#diagnosis-question2a button,
+#diagnosis-question2b button,
+#diagnosis-question3a button,
+#diagnosis-question3b button,
+#diagnosis-question3c button {
+    min-width: 130px;
+    padding: 13px 28px;
+    border: 1px solid #ee8989;
+    border-radius: 30px;
+    background-color: #ee8989;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* ボタンの間隔 */
+#diagnosis-question1 button,
+#diagnosis-question2a button,
+#diagnosis-question2b button,
+#diagnosis-question3a button,
+#diagnosis-question3b button,
+#diagnosis-question3c button {
+    margin: 5px;
+}
+
+/* ボタンのホバー */
+#diagnosis-intro button:hover,
+#diagnosis-result button:hover,
+#diagnosis-question1 button:hover,
+#diagnosis-question2a button:hover,
+#diagnosis-question2b button:hover,
+#diagnosis-question3a button:hover,
+#diagnosis-question3b button:hover,
+#diagnosis-question3c button:hover {
+    background-color: #ffffff;
+    color: #ee8989;
+}
+
+/* hidden属性を確実に反映 */
+[hidden] {
+    display: none !important;
+}
