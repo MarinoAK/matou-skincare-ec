@@ -1,4 +1,5 @@
 import { skinTypes } from "./skinTypes";
+import { products } from "./products";
 
 const startButton = document.querySelector("#start-diagnosis");
 const diagnosisIntro = document.querySelector("#diagnosis-intro");
@@ -40,6 +41,7 @@ const diagnosisResult = document.querySelector("#diagnosis-result");
 const resultSkinType = document.querySelector("#result-skin-type");
 const resultDescription = document.querySelector("#result-description");
 const resultCareAdvice = document.querySelector("#result-care-advice");
+const recommendedProducts = document.querySelector("#recommended-products"); 
 const restartButton = document.querySelector("#restart-diagnosis");
 
 
@@ -90,18 +92,15 @@ if (diagnosisQuestion2b && diagnosisQuestion3b && diagnosisQuestion3c && answerY
 
 }
 
-
 // Q3-Aの分岐
 if (diagnosisQuestion3a && diagnosisResult && answerYes3a && answerNo3a) {
     answerYes3a.addEventListener("click", () => {
         diagnosisQuestion3a.setAttribute("hidden", "");
-        //diagnosisResult.removeAttribute("hidden");
         showDiagnosisResult("oily");
     });
 
     answerNo3a.addEventListener("click", () => {
         diagnosisQuestion3a.setAttribute("hidden", "");
-        //diagnosisResult.removeAttribute("hidden");
         showDiagnosisResult("combination");
     });
 }
@@ -110,13 +109,11 @@ if (diagnosisQuestion3a && diagnosisResult && answerYes3a && answerNo3a) {
 if (diagnosisQuestion3b && diagnosisResult && answerYes3b && answerNo3b) {
     answerYes3b.addEventListener("click", () => {
         diagnosisQuestion3b.setAttribute("hidden", "");
-        //diagnosisResult.removeAttribute("hidden");
         showDiagnosisResult("combination");
     });
 
     answerNo3b.addEventListener("click", () => {
         diagnosisQuestion3b.setAttribute("hidden", "");
-        //diagnosisResult.removeAttribute("hidden");
         showDiagnosisResult("normal");
     });
 }
@@ -125,13 +122,11 @@ if (diagnosisQuestion3b && diagnosisResult && answerYes3b && answerNo3b) {
 if (diagnosisQuestion3c && diagnosisResult && answerYes3c && answerNo3c) {
     answerYes3c.addEventListener("click", () => {
         diagnosisQuestion3c.setAttribute("hidden", "");
-        //diagnosisResult.removeAttribute("hidden");
         showDiagnosisResult("dry");
     });
 
     answerNo3c.addEventListener("click", () => {
         diagnosisQuestion3c.setAttribute("hidden", "");
-        //diagnosisResult.removeAttribute("hidden");
         showDiagnosisResult("normal");
     });
 }
@@ -141,6 +136,35 @@ function showDiagnosisResult(skinTypeId: string) {
     const selectedSkinType = skinTypes.find((skinType) => {
         return skinType.id === skinTypeId;
     });
+
+     // おすすめ商品を取得
+    const selectedProducts = products.filter((product) => {
+        return selectedSkinType?.recommendedProductIds.includes(product.id);
+    });
+
+    // おすすめ商品カードを表示
+    if (recommendedProducts) {
+        recommendedProducts.innerHTML = "";
+
+        selectedProducts.forEach((product) => {
+            const productCard = document.createElement("div");
+
+            productCard.classList.add("recommended-product-card");
+
+            productCard.innerHTML = `
+                <img src="${product.image}" alt="${product.name}">
+                <div class="product-info">
+                    <h4>${product.name}</h4>
+                    <p>${product.price.toLocaleString()}円</p>
+                    <p>${product.shortDescription}</p>
+                    <a href="./product-detail.html?id=${product.id}">商品詳細を見る</a>
+
+                </div>
+            `;
+
+            recommendedProducts.appendChild(productCard);
+        });
+    }
 
     if (selectedSkinType && resultSkinType && resultDescription && resultCareAdvice) {
         resultSkinType.textContent = selectedSkinType.name;

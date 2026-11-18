@@ -778,6 +778,91 @@ body.diagnosis-page {
     color: #ee8989;
 }
 
+/* おすすめ商品一覧 */
+#recommended-products {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+/* 商品カード */
+.recommended-product-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    min-height: 180px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* 商品画像 */
+.recommended-product-card img {
+    display: block;
+    width: 150px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+/* 商品情報 */
+.recommended-product-card .product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    min-width: 0;
+}
+
+/* 商品名 */
+.recommended-product-card .product-info h4 {
+    display: block;
+    width: 100%;
+    margin: 0 0 10px;
+    font-size: 17px;
+}
+
+/* 価格・商品説明 */
+.recommended-product-card .product-info p {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* 商品詳細リンク */
+.recommended-product-card .product-info a {
+    display: inline-block;
+    min-width: 130px;
+    margin-top: 12px;
+    padding: 13px 28px;
+    border: 1px solid #aa9789;
+    border-radius: 30px;
+    background-color: #aa9789;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* ホバー */
+.recommended-product-card .product-info a:hover {
+    background-color: #ffffff;
+    color: #aa9789;
+}
+
 /* hidden属性を確実に反映 */
 [hidden] {
     display: none !important;
