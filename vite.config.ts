@@ -15,6 +15,7 @@ export default defineConfig({
         productDetail: resolve(__dirname, "pages/product-detail.html"),
         campaign: resolve(__dirname, "pages/campaign.html"),
         firstGuide: resolve(__dirname, "pages/first-guide.html"),
+        skinDiagnosis: resolve(__dirname, "pages/skin-diagnosis.html"),
       },
     },
   },

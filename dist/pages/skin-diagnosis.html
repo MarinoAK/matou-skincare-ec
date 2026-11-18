@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>肌悩み診断 | MATOU</title>
+  <script type="module" crossorigin src="/matou-skincare-ec/assets/skinDiagnosis-D5OARTgi.js"></script>
+  <link rel="modulepreload" crossorigin href="/matou-skincare-ec/assets/src-4J-DdhN4.js">
+  <link rel="stylesheet" crossorigin href="/matou-skincare-ec/assets/src-CTJ0oNM5.css">
+</head>
+
+<body>
+<div id="header"></div>
+
+    <header class="page-header">
+        <a href="../index.html">TOPページ</a>
+    </header>
+
+        <div id="diagnosis-intro">
+            <h1>肌悩み診断</h1>
+            <p>あなたの肌悩みに合ったスキンケアを見つけましょう。</p>
+
+            <button id="start-diagnosis">診断を始める</button>
+        </div>
+
+        <div id="diagnosis-question1" hidden>
+            <p>Q1</p>
+            <h2>朝起きたとき、鼻やおでこが皮脂でベタつく</h2>
+                <button type="button" class="answer-yes">はい</button>
+                <button type="button" class="answer-no">いいえ</button>
+        </div>
+
+        <div id="diagnosis-question2a" hidden>
+            <p>Q2</p>
+            <h2>季節問わずに顔がいつもテカってしまう</h2>
+                <button type="button" class="answer-yes">はい</button>
+                <button type="button" class="answer-no">いいえ</button>
+        </div>
+
+        <div id="diagnosis-question2b" hidden>
+            <p>Q2</p>
+            <h2>洗顔すると、肌がつっぱる感じがする</h2>
+                <button type="button" class="answer-yes">はい</button>
+                <button type="button" class="answer-no">いいえ</button>
+        </div>
+
+        <div id="diagnosis-question3a" hidden>
+            <p>Q3</p>
+            <h2>しわやほうれい線はあまり気にならない</h2>
+                <button type="button" class="answer-yes">はい</button>
+                <button type="button" class="answer-no">いいえ</button>
+        </div>
+
+        <div id="diagnosis-question3b" hidden>
+            <p>Q3</p>
+            <h2>顔の毛穴の開きが気になる</h2>
+                <button type="button" class="answer-yes">はい</button>
+                <button type="button" class="answer-no">いいえ</button>
+        </div>
+
+        <div id="diagnosis-question3c" hidden>
+            <p>Q3</p>
+            <h2>冬など乾燥する季節に粉が吹いたり皮が剥ける</h2>
+                <button type="button" class="answer-yes">はい</button>
+                <button type="button" class="answer-no">いいえ</button>
+        </div>
+
+        <div id="diagnosis-result" hidden>
+            <p class="result-intro">あなたの肌タイプは・・・</p>
+            <h2 id="result-skin-type"></h2>
+            <p id="result-description"></p>
+                
+                <h3>おすすめのスキンケア</h3>
+                <p id="result-care-advice"></p>
+
+                <h3>おすすめ商品</h3>
+                    <div id="recommended-products">
+                        <!-- ここにおすすめ商品カードを表示 -->
+                    </div>
+
+                <button type="button" id="restart-diagnosis">もう一度診断する</button>
+
+        </div>
+
+
+  
+</body>
+</html>
